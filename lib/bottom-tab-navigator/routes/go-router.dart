@@ -30,6 +30,7 @@ final GoRouter appRouter = GoRouter(
                 builder: (context, state) => const HomeScreen(),
                 routes: [
                   GoRoute(
+                    parentNavigatorKey: _rootNavigatorKey,
                     path: 'details',
                     builder: (context, state) => const DetailsScreen(),
                   )

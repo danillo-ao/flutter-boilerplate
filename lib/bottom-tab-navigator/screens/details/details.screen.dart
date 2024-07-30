@@ -6,7 +6,7 @@ class DetailsScreen extends StatelessWidget {
   const DetailsScreen({ super.key });
 
   void navigate(BuildContext context) {
-    context.go(Routes.HOME);
+    context.pop();
   }
 
   @override
