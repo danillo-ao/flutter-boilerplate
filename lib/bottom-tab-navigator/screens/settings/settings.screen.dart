@@ -1,4 +1,3 @@
-import 'package:boilerplate/bottom-tab-navigator/widgets/bottom-navigation.widget.dart';
 import 'package:flutter/material.dart';
 
 class SettingsScreen extends StatelessWidget {

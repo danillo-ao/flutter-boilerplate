@@ -8,35 +8,53 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
-final _shellNavigatorKey = GlobalKey<NavigatorState>();
+
+final _homeBranchKey = GlobalKey<NavigatorState>();
+final _settingsBranchKey = GlobalKey<NavigatorState>();
+final _infosBranchKey = GlobalKey<NavigatorState>();
 
 final GoRouter appRouter = GoRouter(
   initialLocation: Routes.HOME,
   navigatorKey: _rootNavigatorKey,
   routes: <RouteBase>[
-    ShellRoute(
-      navigatorKey: _shellNavigatorKey,
-      pageBuilder: (context, GoRouterState state, child) {
-        return NoTransitionPage(
-          child: ScaffoldApp(child: child)
-        );
+    StatefulShellRoute.indexedStack(
+      builder: (context, GoRouterState state, navigationShell) {
+        return ScaffoldApp(navigationShell: navigationShell);
       },
-      routes: [
-        GoRoute(
-          parentNavigatorKey: _shellNavigatorKey,
-          path: Routes.HOME,
-          builder: (context, state) => const HomeScreen(),
+      branches: [
+        StatefulShellBranch(
+          navigatorKey: _homeBranchKey,
+            routes: [
+              GoRoute(
+                path: Routes.HOME,
+                builder: (context, state) => const HomeScreen(),
+                routes: [
+                  GoRoute(
+                    path: 'details',
+                    builder: (context, state) => const DetailsScreen(),
+                  )
+                ]
+              )
+            ]
         ),
-        GoRoute(
-          parentNavigatorKey: _shellNavigatorKey,
-          path: Routes.SETTINGS,
-          builder: (context, state) => const SettingsScreen(),
+        StatefulShellBranch(
+          navigatorKey: _settingsBranchKey,
+            routes: [
+              GoRoute(
+                path: Routes.SETTINGS,
+                builder: (context, state) => const SettingsScreen(),
+              ),
+            ]
         ),
-        GoRoute(
-          parentNavigatorKey: _shellNavigatorKey,
-          path: Routes.INFOS,
-          builder: (context, state) => const InfosScreen(),
-        ),
+        StatefulShellBranch(
+          navigatorKey: _infosBranchKey,
+          routes: [
+            GoRoute(
+              path: Routes.INFOS,
+              builder: (context, state) => const InfosScreen(),
+            ),
+          ],
+        )
       ]
     ),
 

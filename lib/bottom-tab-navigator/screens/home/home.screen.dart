@@ -6,7 +6,7 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({ super.key });
 
   void navigate(BuildContext context) {
-    context.go(Routes.DETAILS);
+    context.go('/home/details');
   }
 
   @override
@@ -19,7 +19,8 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(child: Text("Home screen body")),
-          ElevatedButton(onPressed: (){ navigate(context); }, child: const Text("DETAILS!"))
+          ElevatedButton(onPressed: (){ navigate(context); }, child: const Text("DETAILS!")),
+          ElevatedButton(onPressed: (){ context.go(Routes.DETAILS); }, child: const Text("DETAILS ROOT!"))
         ]
       )
     );
