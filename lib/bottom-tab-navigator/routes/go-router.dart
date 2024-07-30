@@ -16,7 +16,7 @@ final GoRouter appRouter = GoRouter(
   routes: <RouteBase>[
     ShellRoute(
       navigatorKey: _shellNavigatorKey,
-      pageBuilder: (context, state, child) {
+      pageBuilder: (context, GoRouterState state, child) {
         return NoTransitionPage(
           child: ScaffoldApp(child: child)
         );

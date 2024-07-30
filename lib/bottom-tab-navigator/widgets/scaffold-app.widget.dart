@@ -2,15 +2,15 @@ import 'package:boilerplate/bottom-tab-navigator/widgets/bottom-navigation.widge
 import 'package:flutter/material.dart';
 
 class ScaffoldApp extends StatelessWidget {
-  ScaffoldApp({ super.key, required this.child });
+  const ScaffoldApp({ super.key, required this.child });
 
-  Widget child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(child: child),
-      bottomNavigationBar: const BottomNavigation()
+      bottomNavigationBar: BottomNavigation()
     );
   }
 }
