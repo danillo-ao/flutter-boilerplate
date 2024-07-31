@@ -1,6 +1,11 @@
-import 'package:boilerplate/bottom-tab-navigator/routes/routes.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
 import 'package:go_router/go_router.dart';
+
+// Project imports:
+import 'package:boilerplate/bottom-tab-navigator/routes/routes.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({ super.key });
