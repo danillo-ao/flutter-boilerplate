@@ -1,11 +1,9 @@
-// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
 import 'package:go_router/go_router.dart';
 
 class ScaffoldApp extends StatelessWidget {
-  const ScaffoldApp({ super.key, required this.navigationShell });
+  const ScaffoldApp({super.key, required this.navigationShell});
 
   final StatefulNavigationShell navigationShell;
 
@@ -16,7 +14,10 @@ class ScaffoldApp extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: navigationShell.currentIndex,
         onTap: (index) {
-          navigationShell.goBranch(index, initialLocation: index == navigationShell.currentIndex);
+          navigationShell.goBranch(
+            index,
+            initialLocation: index == navigationShell.currentIndex,
+          );
         },
         items: const [
           BottomNavigationBarItem(
@@ -31,8 +32,8 @@ class ScaffoldApp extends StatelessWidget {
             icon: Icon(Icons.info),
             label: 'Info',
           ),
-        ]
-      )
+        ],
+      ),
     );
   }
 }

@@ -1,11 +1,10 @@
-// Flutter imports:
 import 'package:flutter/material.dart';
 
 class InfosScreen extends StatelessWidget {
-  const InfosScreen({ super.key });
+  const InfosScreen({super.key});
 
   @override
-  Widget build (BuildContext context) {
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Infos Screen"),

@@ -1,8 +1,6 @@
-// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Project imports:
-import 'package:boilerplate/bottom-tab-navigator/routes/go-router.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/routes/go-router.dart';
 
 class BottomTabNavigatorApp extends StatelessWidget {
   const BottomTabNavigatorApp({super.key});

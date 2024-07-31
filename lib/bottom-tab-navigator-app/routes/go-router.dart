@@ -1,16 +1,13 @@
-// Flutter imports:
 import 'package:flutter/material.dart';
 
-// Package imports:
 import 'package:go_router/go_router.dart';
 
-// Project imports:
-import 'package:boilerplate/bottom-tab-navigator/routes/routes.dart';
-import 'package:boilerplate/bottom-tab-navigator/screens/details/details.screen.dart';
-import 'package:boilerplate/bottom-tab-navigator/screens/home/home.screen.dart';
-import 'package:boilerplate/bottom-tab-navigator/screens/infos/infos.screen.dart';
-import 'package:boilerplate/bottom-tab-navigator/screens/settings/settings.screen.dart';
-import 'package:boilerplate/bottom-tab-navigator/widgets/scaffold-app.widget.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/routes/routes.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/screens/details/details.screen.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/screens/home/home.screen.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/screens/infos/infos.screen.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/screens/settings/settings.screen.dart';
+import 'package:boilerplate/bottom-tab-navigator-app/widgets/scaffold-app.widget.dart';
 
 final _rootNavigatorKey = GlobalKey<NavigatorState>();
 

@@ -42,6 +42,7 @@ dev_dependencies:
     sdk: flutter
 
   import_sorter: ^4.6.0
+  husky: ^0.1.7
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -91,3 +92,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+import_sorter:
+  comments: false # Optional, defaults to true
