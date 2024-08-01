@@ -1,8 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 
 class PreferencesProvider with ChangeNotifier {
-  // Locale _locale = Locale(Platform.localeName);
-  Locale _locale = Locale('pt');
+  Locale _locale = Locale(Platform.localeName);
   String _preferences = "preferences";
 
   Locale get locale => _locale;

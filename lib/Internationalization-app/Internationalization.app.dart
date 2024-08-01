@@ -1,11 +1,9 @@
-import 'package:flutter/material.dart';
-
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:provider/provider.dart';
-
+import 'package:boilerplate/Internationalization-app/l10n/localizations/app_localizations.dart';
 import 'package:boilerplate/Internationalization-app/providers/preferences.provider.dart';
 import 'package:boilerplate/Internationalization-app/screens/home/home.screen.dart';
-import 'package:boilerplate/l10n/localizations/app_localizations.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 
 class InternationalizationAppBuilder extends StatelessWidget {
   const InternationalizationAppBuilder({super.key});
