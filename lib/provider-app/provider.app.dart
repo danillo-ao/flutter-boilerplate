@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
+import 'package:provider/provider.dart';
+
 import 'package:boilerplate/provider-app/providers/counter.provider.dart';
 import 'package:boilerplate/provider-app/screens/home.screen.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class ProviderApp extends StatelessWidget {
   const ProviderApp({super.key});
