@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
+
+import 'package:provider/provider.dart';
+
 import 'package:boilerplate/Internationalization-app/providers/preferences.provider.dart';
 import 'package:boilerplate/l10n/localizations/app_localizations.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
