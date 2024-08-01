@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "helloWorld": "Hello World!",
+  "helloWorldTest": "Hello World Test!",
+  "defineLangAsPT": "Define language to pt-br",
+  "defineLangAsEN": "Define language to en-us"
+}

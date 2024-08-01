@@ -1,0 +1,7 @@
+{
+  "@@locale": "pt",
+  "helloWorld": "Olá mundo!",
+  "helloWorldTest": "Olá Mundo de Teste!",
+  "defineLangAsPT": "Definir idioma para pt-br",
+  "defineLangAsEN": "Definir idioma para en-us"
+}
