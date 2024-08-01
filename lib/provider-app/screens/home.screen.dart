@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
               Center(child: Text("Count Value: $count")),
               //
               Container(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                padding: EdgeInsets.only(top: 10),
                 child: ElevatedButton(
                   child: Text("Increment"),
                   onPressed: () {
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
               ),
               //
               Container(
-                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                padding: EdgeInsets.only(top: 10),
                 child: ElevatedButton(
                   child: Text("Decrement"),
                   onPressed: () {
